@@ -1,0 +1,24 @@
+.header {
+    height: 80px;
+    background-color: var(--grey-bg);
+    border-bottom: 7px solid var(--buhler-green);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 25px;
+    gap: 70px;
+
+    &__logo {
+        flex-grow: 1;
+        img {
+            height: 40px;
+        }
+    }
+
+    &__operator, &__timer {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: bold;
+    }
+}

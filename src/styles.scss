@@ -1,0 +1,22 @@
+@import 'material-icons/iconfont/material-icons.css';
+:root {
+    --grey-bg: #dcdcdc;
+
+    --running-state-color: #7cb31e;
+    --alarm-state-color: #fe3636;
+    --warning-state-color: #ff9704;
+    --pileline-color: #319512;
+
+    --buhler-black: #1b1b1b;
+    --buhler-green: #009c95;
+    --buhler-white: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

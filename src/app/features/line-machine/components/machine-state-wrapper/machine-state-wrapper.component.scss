@@ -1,0 +1,39 @@
+:host {
+    display: block;
+    position: relative;
+    background-color: var(--grey-bg);
+
+    &:after {
+        font-size: 26px;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        font-family: 'Material Icons';
+        color: #000;
+        content: '\eb8b';
+    }
+
+    &.state-running {
+        background-color: var(--grey-bg);
+        &:after {
+            content: '\e8ba';
+            color: var(--running-state-color);
+        }
+    }
+
+    &.state-alarm {
+        background-color: var(--alarm-state-color);
+        &:after {
+            content: '\e001';
+            color: #fff;
+        }
+    }
+
+    &.state-warning {
+        background-color: var(--warning-state-color);
+        &:after {
+            content: '\e8b2';
+            color: #fff;
+        }
+    }
+}

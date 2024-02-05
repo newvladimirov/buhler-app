@@ -1,0 +1,27 @@
+.line-machine-overview {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+
+    &__error-container {
+        padding: 10px;
+    }
+
+    &__items-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            content: ' ';
+            background-color: green;
+        }
+    }
+}
