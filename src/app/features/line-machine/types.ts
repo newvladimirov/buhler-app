@@ -7,4 +7,3 @@ export interface MachineType {
 export interface MachineLineConfig {
     machines: MachineType[];
 }
-

@@ -15,7 +15,8 @@
         }
     }
 
-    &__operator, &__timer {
+    &__operator,
+    &__timer {
         display: flex;
         align-items: center;
         gap: 5px;

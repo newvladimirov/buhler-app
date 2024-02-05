@@ -1,7 +1,7 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {MachineType} from '../../types';
-import {NgClass, NgIf} from '@angular/common';
-import {MachineStateWrapperComponent} from "@buhler/features/line-machine/components";
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { MachineType } from '../../types';
+import { NgClass, NgIf } from '@angular/common';
+import { MachineStateWrapperComponent } from '@buhler/features/line-machine/components';
 
 @Component({
     selector: 'buhler-app-machine-item',

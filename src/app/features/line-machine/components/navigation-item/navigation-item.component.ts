@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {MachineType} from '../../types';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { MachineType } from '../../types';
 
 @Component({
     selector: 'buhler-app-navigation-item',

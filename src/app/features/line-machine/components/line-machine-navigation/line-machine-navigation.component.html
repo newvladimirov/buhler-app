@@ -1,8 +1,5 @@
 <div class="line-machine-navigation">
-    <buhler-app-machine-state-wrapper
-        *ngFor="let machine of machines"
-        [state]="lineState[machine.type] || 0"
-    >
+    <buhler-app-machine-state-wrapper *ngFor="let machine of machines" [state]="lineState[machine.type] || 0">
         <buhler-app-navigation-item [machine]="machine"></buhler-app-navigation-item>
     </buhler-app-machine-state-wrapper>
 </div>

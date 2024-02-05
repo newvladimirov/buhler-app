@@ -4,16 +4,10 @@
     "compilerOptions": {
         "outDir": "./out-tsc/app",
         "paths": {
-            "@buhler/*": [
-                "./src/app/*"
-            ]
+            "@buhler/*": ["./src/app/*"]
         },
         "types": []
     },
-    "files": [
-        "src/main.ts"
-    ],
-    "include": [
-        "src/**/*.d.ts"
-    ]
+    "files": ["src/main.ts"],
+    "include": ["src/**/*.d.ts"]
 }

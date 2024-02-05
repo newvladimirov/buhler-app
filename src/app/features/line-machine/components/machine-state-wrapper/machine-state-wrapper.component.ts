@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, HostBinding, Input} from '@angular/core';
-import {RunningStates} from "@buhler/features/line-machine/running-states";
+import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
+import { RunningStates } from '@buhler/features/line-machine/running-states';
 
 @Component({
     selector: 'buhler-app-machine-state-wrapper',

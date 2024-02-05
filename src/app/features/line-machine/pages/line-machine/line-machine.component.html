@@ -1,13 +1,8 @@
 <buhler-app-error-description *ngIf="error$ | async as error" [error]="error"></buhler-app-error-description>
 
-<ng-container *ngIf="{config: (config$ | async)!, states: (lineState$ | async)! } as data">
-    <buhler-app-line-machine-navigation [machines]="data.config.machines"
-                                        [lineState]="data.states">
-
+<ng-container *ngIf="{ config: (config$ | async)!, states: (lineState$ | async)! } as data">
+    <buhler-app-line-machine-navigation [machines]="data.config.machines" [lineState]="data.states">
     </buhler-app-line-machine-navigation>
-    <buhler-app-line-machine-overview [machines]="data.config.machines"
-                                      [lineState]="data.states">
-
+    <buhler-app-line-machine-overview [machines]="data.config.machines" [lineState]="data.states">
     </buhler-app-line-machine-overview>
 </ng-container>
-

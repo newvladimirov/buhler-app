@@ -1,23 +1,22 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {MachineItemComponent} from './machine-item.component';
+import { MachineItemComponent } from './machine-item.component';
 
 describe('MachineItemComponent', () => {
-  let component: MachineItemComponent;
-  let fixture: ComponentFixture<MachineItemComponent>;
+    let component: MachineItemComponent;
+    let fixture: ComponentFixture<MachineItemComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [MachineItemComponent]
-    })
-    .compileComponents();
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            imports: [MachineItemComponent],
+        }).compileComponents();
 
-    fixture = TestBed.createComponent(MachineItemComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+        fixture = TestBed.createComponent(MachineItemComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

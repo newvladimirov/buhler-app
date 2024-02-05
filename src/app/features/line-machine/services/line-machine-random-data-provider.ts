@@ -1,5 +1,5 @@
-import {interval, map, Observable, startWith} from 'rxjs';
-import {LineMachineDataProvider} from "@buhler/features/line-machine/interfaces/line-machine-data-provider.interface";
+import { interval, map, Observable, startWith } from 'rxjs';
+import { LineMachineDataProvider } from '@buhler/features/line-machine/interfaces/line-machine-data-provider.interface';
 
 export class LineMachineRandomDataProvider implements LineMachineDataProvider {
     public start(): Observable<{ [type: number]: number }> {

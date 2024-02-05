@@ -1,9 +1,6 @@
 <div class="line-machine-overview">
     <div class="line-machine-overview__items-container">
-        <buhler-app-machine-state-wrapper
-            *ngFor="let machine of machines"
-            [state]="lineState[machine.type] || 0"
-        >
+        <buhler-app-machine-state-wrapper *ngFor="let machine of machines" [state]="lineState[machine.type] || 0">
             <buhler-app-machine-item [machine]="machine"></buhler-app-machine-item>
         </buhler-app-machine-state-wrapper>
     </div>
