@@ -26,7 +26,7 @@ export const startMonitoringEffect = createEffect(
     (actions$ = inject(Actions), dataProvider = inject(LineMachineDataProvider)) => {
         return actions$.pipe(
             ofType(startMonitoring),
-            switchMap(() => dataProvider.start().pipe(map((state) => setLineState({ state })))),
+            exhaustMap(() => dataProvider.start().pipe(map((state) => setLineState({ state })))),
             catchError((err) => {
                 return of(setError({ error: 'Monitoring: ' + err.message }));
             }),
